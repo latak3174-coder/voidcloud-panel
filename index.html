@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUSTICE SMP | Control Center</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090911;color:#eee;font-family:Arial,sans-serif}
+header{padding:24px;background:#151323;border-bottom:1px solid #393052}
+h1{margin:0;color:#c4a5ff}
+header p{color:#aaa;margin-bottom:0}
+main{max-width:1000px;margin:auto;padding:22px}
+.card{background:#151523;border:1px solid #302b43;border-radius:15px;padding:20px;margin-bottom:17px}
+.status{color:#f5c66b;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.stat{background:#201e30;padding:17px;border-radius:12px}
+.stat small{color:#aaa}
+.stat h2{margin:9px 0 0;color:#c4a5ff}
+button{border:0;border-radius:9px;padding:12px 17px;margin:5px;background:#8060c9;color:white;font-weight:bold}
+button:disabled{opacity:.45}
+input{background:#0c0c16;border:1px solid #393052;color:white;padding:12px;border-radius:8px;width:100%}
+.muted{color:#aaa;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<h1>JUSTICE SMP</h1>
+<p>Control Center · Minecraft Java</p>
+</header>
+<main>
+<section class="card">
+<h2>Server Overview</h2>
+<p class="status">● API NOT CONNECTED</p>
+<p>Server: <b>JUSTICE SMP</b></p>
+<p>Address: <b>del.voidcloud.bond:35578</b></p>
+<p class="muted">This is your dashboard preview. Live server data will appear after secure API integration.</p>
+</section>
+
+<section class="grid">
+<div class="stat"><small>Players Online</small><h2>--</h2></div>
+<div class="stat"><small>Memory Usage</small><h2>--</h2></div>
+<div class="stat"><small>CPU Usage</small><h2>--</h2></div>
+<div class="stat"><small>Uptime</small><h2>--</h2></div>
+</section>
+
+<section class="card">
+<h2>Server Controls</h2>
+<button disabled>START</button>
+<button disabled>RESTART</button>
+<button disabled>STOP</button>
+<p class="muted">Controls activate after backend integration.</p>
+</section>
+
+<section class="card">
+<h2>Console</h2>
+<input placeholder="Console will be connected later..." disabled>
+<p class="muted">Live console is not connected yet.</p>
+</section>
+
+<section class="card">
+<h2>Management</h2>
+<button disabled>File Manager</button>
+<button disabled>Players</button>
+<button disabled>Settings</button>
+<p class="muted">More features coming with the secure backend.</p>
+</section>
+</main>
+</body>
+</html>
